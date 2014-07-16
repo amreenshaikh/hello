@@ -15,22 +15,22 @@
 		</developer>
 	</developers>
 	<build>
-		<plugins>
-			<plugin>
-			<groupid>org.apache.maven.plugins</groupid>
-			<artifactid>maven-gpg-plugin</artifactid>
-			<executions>
-			 <execution>
-			   <id>sign-artifacts</id>
-			   <phase>verify</phase>
-			   <goals>
-				 <goal>sign</goal>
-			   </goals>
-			 </execution>
-			</executions>
-			</plugin>
-		</plugins>
-	</build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 	<licenses>
 		<license>
 		  <name>Copyright (c) 2009, Perforce Software, Inc.  All rights reserved.</name>
@@ -63,12 +63,12 @@
 		<snapshotRepository>
 			<id>sonatype-nexus-staging</id>
 			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 		<repository>
 			<id>sonatype-nexus-staging</id>
 			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 		</repository>
 	</distributionManagement>
 	
