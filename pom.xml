@@ -14,7 +14,23 @@
 		  <email>amreenharoon@gmail.com</email>
 		</developer>
 	</developers>
-	
+	<build>
+		<plugins>
+			<plugin>
+			<groupid>org.apache.maven.plugins</groupid>
+			<artifactid>maven-gpg-plugin</artifactid>
+			<executions>
+			 <execution>
+			   <id>sign-artifacts</id>
+			   <phase>verify</phase>
+			   <goals>
+				 <goal>sign</goal>
+			   </goals>
+			 </execution>
+			</executions>
+			</plugin>
+		</plugins>
+	</build>
 	<licenses>
 		<license>
 		  <name>Copyright (c) 2009, Perforce Software, Inc.  All rights reserved.</name>
